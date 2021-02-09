@@ -1,0 +1,5 @@
+FROM php:7.4-apache
+RUN apt update
+RUN apt install -y nano
+RUN apt install -y git
+COPY web /var/www/html
